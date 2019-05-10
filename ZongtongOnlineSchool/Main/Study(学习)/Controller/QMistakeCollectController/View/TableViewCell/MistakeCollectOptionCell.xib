@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MistakeCollectOptionCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a" translatesAutoresizingMaskIntoConstraints="NO" id="KWM-n3-X3T">
+                        <rect key="frame" x="20" y="8" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="f40-N2-6Ue"/>
+                            <constraint firstAttribute="height" constant="20" id="lAY-Mt-dzA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvQ-HV-bLE">
+                        <rect key="frame" x="50" y="9" width="250" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EvQ-HV-bLE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="L3C-kK-q7g"/>
+                    <constraint firstItem="KWM-n3-X3T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="OcX-Dj-Ucb"/>
+                    <constraint firstItem="KWM-n3-X3T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="QSY-gD-RU0"/>
+                    <constraint firstAttribute="bottom" secondItem="EvQ-HV-bLE" secondAttribute="bottom" constant="6.5" id="cOK-TW-BvC"/>
+                    <constraint firstItem="EvQ-HV-bLE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="wcV-iz-0NH"/>
+                    <constraint firstAttribute="trailing" secondItem="EvQ-HV-bLE" secondAttribute="trailing" constant="20" id="yjC-M0-h01"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="optionImgView" destination="KWM-n3-X3T" id="8Ey-Zk-AYW"/>
+                <outlet property="optionLabel" destination="EvQ-HV-bLE" id="XER-9L-owk"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="a" width="32" height="32"/>
+    </resources>
+</document>

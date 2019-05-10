@@ -1,0 +1,6 @@
+framework module XZCustomView {
+  umbrella header "XZCustomView-umbrella.h"
+
+  export *
+  module * { export * }
+}

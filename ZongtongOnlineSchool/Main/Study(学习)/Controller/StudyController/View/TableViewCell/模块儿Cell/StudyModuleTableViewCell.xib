@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="StudyModuleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="189.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-Hf-9Ww">
+                        <rect key="frame" x="0.0" y="160" width="320" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="uw9-Oh-4sb"/>
+                        </constraints>
+                        <color key="pageIndicatorTintColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="currentPageIndicatorTintColor" red="0.23529411759999999" green="0.56862745100000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </pageControl>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhinengtiku" translatesAutoresizingMaskIntoConstraints="NO" id="17n-kB-bXf">
+                        <rect key="frame" x="80" y="0.0" width="160" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="DhQ-5r-OxS"/>
+                            <constraint firstAttribute="width" constant="160" id="L8e-fH-ANS"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fFg-Hf-9Ww" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0CI-9j-VAP"/>
+                    <constraint firstItem="17n-kB-bXf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Tjp-Mt-AIQ"/>
+                    <constraint firstItem="17n-kB-bXf" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="bXZ-GX-kVo"/>
+                    <constraint firstAttribute="trailing" secondItem="fFg-Hf-9Ww" secondAttribute="trailing" id="hh8-Mp-MVD"/>
+                    <constraint firstAttribute="bottom" secondItem="fFg-Hf-9Ww" secondAttribute="bottom" constant="-7.5" id="tV5-lN-GID"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="pageControl" destination="fFg-Hf-9Ww" id="c5z-4I-pp6"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="zhinengtiku" width="390" height="64"/>
+    </resources>
+</document>

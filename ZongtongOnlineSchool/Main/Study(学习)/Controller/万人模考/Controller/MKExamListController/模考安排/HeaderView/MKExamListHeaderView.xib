@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MKExamListHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SoQ-ai-47u">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiahao" translatesAutoresizingMaskIntoConstraints="NO" id="Esn-lF-olo">
+                    <rect key="frame" x="5" y="17" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="96Q-JL-aSc"/>
+                        <constraint firstAttribute="width" constant="20" id="TlP-92-1uT"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVL-9v-fkK">
+                    <rect key="frame" x="30" y="10" width="210" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="dQp-mQ-mHF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0Y-tv-m0e">
+                    <rect key="frame" x="20" y="69" width="300" height="1"/>
+                    <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="FKq-Tp-g08"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开考时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfa-rp-4nv">
+                    <rect key="frame" x="30" y="45" width="210" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hae-qt-VIt">
+                    <rect key="frame" x="240" y="23" width="70" height="24"/>
+                    <color key="backgroundColor" red="0.23529411759999999" green="0.56862745100000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="RVe-Uw-2dz"/>
+                        <constraint firstAttribute="height" constant="24" id="Vm3-AD-BDM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="开始考试">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" red="0.23529411759999999" green="0.56862745100000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="examBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="yiV-bB-aj9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2W-zl-EWF">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="70"/>
+                    <connections>
+                        <action selector="MKExamListTableViewTopBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="pnM-k3-Tdl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="S2W-zl-EWF" secondAttribute="trailing" constant="80" id="1jF-18-Jbu"/>
+                <constraint firstItem="hfa-rp-4nv" firstAttribute="top" secondItem="hVL-9v-fkK" secondAttribute="bottom" id="6SJ-gK-nq2"/>
+                <constraint firstItem="hVL-9v-fkK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="8oO-dK-gyf"/>
+                <constraint firstItem="SoQ-ai-47u" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Nn-CQ-P9W"/>
+                <constraint firstAttribute="bottom" secondItem="SoQ-ai-47u" secondAttribute="bottom" id="HQH-TJ-mbj"/>
+                <constraint firstItem="SoQ-ai-47u" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ko1-TF-uWe"/>
+                <constraint firstItem="V0Y-tv-m0e" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Lay-rv-fIa"/>
+                <constraint firstItem="Esn-lF-olo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="Lx6-1D-CCC"/>
+                <constraint firstItem="hfa-rp-4nv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="PXQ-Zz-4wL"/>
+                <constraint firstAttribute="bottom" secondItem="hfa-rp-4nv" secondAttribute="bottom" constant="5" id="RtF-xG-ivX"/>
+                <constraint firstItem="S2W-zl-EWF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TCf-5c-StQ"/>
+                <constraint firstAttribute="trailing" secondItem="hVL-9v-fkK" secondAttribute="trailing" constant="80" id="WeY-x6-Pm4"/>
+                <constraint firstAttribute="trailing" secondItem="hfa-rp-4nv" secondAttribute="trailing" constant="80" id="csR-dh-rWl"/>
+                <constraint firstItem="hae-qt-VIt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hET-cz-2gF"/>
+                <constraint firstAttribute="bottom" secondItem="S2W-zl-EWF" secondAttribute="bottom" id="huX-eB-YAG"/>
+                <constraint firstAttribute="trailing" secondItem="V0Y-tv-m0e" secondAttribute="trailing" id="i48-RS-Y2n"/>
+                <constraint firstAttribute="bottom" secondItem="V0Y-tv-m0e" secondAttribute="bottom" id="lcE-ac-vv5"/>
+                <constraint firstAttribute="trailing" secondItem="hae-qt-VIt" secondAttribute="trailing" constant="10" id="qvW-u3-ngA"/>
+                <constraint firstItem="Esn-lF-olo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="suu-vz-I2H"/>
+                <constraint firstItem="hVL-9v-fkK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="xDv-bU-12j"/>
+                <constraint firstItem="S2W-zl-EWF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yAY-Cs-KC9"/>
+                <constraint firstAttribute="trailing" secondItem="SoQ-ai-47u" secondAttribute="trailing" id="ysj-Gb-vHK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="examBtn" destination="hae-qt-VIt" id="uFe-HM-hlc"/>
+                <outlet property="imgView" destination="Esn-lF-olo" id="1Tq-8P-5HS"/>
+                <outlet property="timeLabel" destination="hfa-rp-4nv" id="H15-PM-ef2"/>
+                <outlet property="titleLabel" destination="hVL-9v-fkK" id="MfX-X3-Ke9"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="jiahao" width="30" height="30"/>
+    </resources>
+</document>

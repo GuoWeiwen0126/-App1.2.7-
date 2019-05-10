@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FileDownDetailHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="225"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axa-QO-VfM">
+                    <rect key="frame" x="20" y="20" width="280" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Axa-QO-VfM" secondAttribute="height" multiplier="28:15" id="cDz-iH-hTn"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="ziliaoxiazaibg"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fu3-Qq-K6I">
+                    <rect key="frame" x="0.0" y="170" width="320" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="tMD-ao-4av"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bpd-AE-NLa">
+                    <rect key="frame" x="0.0" y="220" width="320" height="5"/>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="gDM-dT-qR4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fu3-Qq-K6I" secondAttribute="trailing" id="3Kd-aI-NDn"/>
+                <constraint firstItem="Bpd-AE-NLa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5Ym-qC-tF9"/>
+                <constraint firstItem="fu3-Qq-K6I" firstAttribute="top" secondItem="Axa-QO-VfM" secondAttribute="bottom" id="6BS-im-Flx"/>
+                <constraint firstAttribute="trailing" secondItem="Bpd-AE-NLa" secondAttribute="trailing" id="Cn3-Jn-wRJ"/>
+                <constraint firstAttribute="bottom" secondItem="Bpd-AE-NLa" secondAttribute="bottom" id="H05-CS-zNP"/>
+                <constraint firstItem="Axa-QO-VfM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="M2P-Ys-aZe"/>
+                <constraint firstItem="Axa-QO-VfM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="S2V-e7-64h"/>
+                <constraint firstAttribute="trailing" secondItem="Axa-QO-VfM" secondAttribute="trailing" constant="20" id="s6c-5E-Idf"/>
+                <constraint firstItem="fu3-Qq-K6I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ugh-7j-LNF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgButton" destination="Axa-QO-VfM" id="Xld-Ja-qJ4"/>
+                <outlet property="bgView" destination="fu3-Qq-K6I" id="T8t-0G-ko5"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="ziliaoxiazaibg" width="1086" height="576"/>
+    </resources>
+</document>

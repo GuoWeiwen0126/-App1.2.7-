@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MKRankExamListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8z-eg-0Ms">
+                        <rect key="frame" x="20" y="10" width="220" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="eR5-Jr-wYW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="考试时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foQ-eh-Wxv">
+                        <rect key="frame" x="20" y="45" width="220" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Wf-jV-6uY">
+                        <rect key="frame" x="240" y="23" width="70" height="24"/>
+                        <color key="backgroundColor" red="0.23529411759999999" green="0.56862745100000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Lc4-q9-y7s"/>
+                            <constraint firstAttribute="width" constant="70" id="XOe-rH-jTN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="查看排行">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" red="0.23529411759999999" green="0.56862745100000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="rankBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="LHy-b5-9TZ"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Gr-ud-ojm">
+                        <rect key="frame" x="20" y="69" width="300" height="1"/>
+                        <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="4hQ-a5-Jfi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9Gr-ud-ojm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="006-xV-wuh"/>
+                    <constraint firstAttribute="bottom" secondItem="foQ-eh-Wxv" secondAttribute="bottom" constant="4.5" id="3sa-vj-pkP"/>
+                    <constraint firstAttribute="bottom" secondItem="9Gr-ud-ojm" secondAttribute="bottom" constant="-0.5" id="A5K-hN-Y9U"/>
+                    <constraint firstItem="d8z-eg-0Ms" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="FFZ-Gg-bgS"/>
+                    <constraint firstAttribute="trailing" secondItem="9Gr-ud-ojm" secondAttribute="trailing" id="NAw-pJ-i71"/>
+                    <constraint firstItem="5Wf-jV-6uY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OEH-vs-0wv"/>
+                    <constraint firstAttribute="trailing" secondItem="5Wf-jV-6uY" secondAttribute="trailing" constant="10" id="Q1g-Tb-kGe"/>
+                    <constraint firstItem="d8z-eg-0Ms" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Vl2-QR-GKM"/>
+                    <constraint firstItem="foQ-eh-Wxv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="XVt-ch-qh1"/>
+                    <constraint firstAttribute="trailing" secondItem="d8z-eg-0Ms" secondAttribute="trailing" constant="80" id="aRX-AT-xY4"/>
+                    <constraint firstItem="foQ-eh-Wxv" firstAttribute="top" secondItem="d8z-eg-0Ms" secondAttribute="bottom" id="g0p-Ne-C2g"/>
+                    <constraint firstAttribute="trailing" secondItem="foQ-eh-Wxv" secondAttribute="trailing" constant="80" id="na8-v8-jfZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="rankBtn" destination="5Wf-jV-6uY" id="tVA-L0-Qd7"/>
+                <outlet property="timeLabel" destination="foQ-eh-Wxv" id="5h9-LC-bzO"/>
+                <outlet property="titleLabel" destination="d8z-eg-0Ms" id="XVf-Kj-XnK"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

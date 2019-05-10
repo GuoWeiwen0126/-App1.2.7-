@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FbQTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单选题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9a-Dw-wQm">
+                        <rect key="frame" x="20" y="5" width="200" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.23529411759999999" green="0.56862745100000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijs-aQ-0Ri">
+                        <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="6Kb-UA-pg4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ijs-aQ-0Ri" secondAttribute="bottom" constant="-0.5" id="4qo-EW-elH"/>
+                    <constraint firstAttribute="trailing" secondItem="y9a-Dw-wQm" secondAttribute="trailing" constant="100" id="Ok6-x8-W4A"/>
+                    <constraint firstAttribute="bottom" secondItem="y9a-Dw-wQm" secondAttribute="bottom" constant="4.5" id="R8O-me-TNe"/>
+                    <constraint firstAttribute="trailing" secondItem="ijs-aQ-0Ri" secondAttribute="trailing" id="YWp-UR-agv"/>
+                    <constraint firstItem="y9a-Dw-wQm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="pc0-Vc-phO"/>
+                    <constraint firstItem="y9a-Dw-wQm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="sNf-Nz-kdK"/>
+                    <constraint firstItem="ijs-aQ-0Ri" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="v1U-1J-6B0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="qTypeLabel" destination="y9a-Dw-wQm" id="ka4-q5-cQW"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

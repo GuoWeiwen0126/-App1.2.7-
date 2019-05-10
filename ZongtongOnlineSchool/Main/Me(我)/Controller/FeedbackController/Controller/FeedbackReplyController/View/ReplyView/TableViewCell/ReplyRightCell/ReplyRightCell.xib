@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ReplyRightCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lIK-mG-pgW">
+                        <rect key="frame" x="275" y="10" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="W6v-kh-6xC"/>
+                            <constraint firstAttribute="height" constant="30" id="vEo-Kz-S2a"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhH-LS-qDK">
+                        <rect key="frame" x="115" y="10" width="150" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="8kS-Wo-g41"/>
+                            <constraint firstAttribute="width" constant="150" id="OPI-b1-HfY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="duihuakuang1" translatesAutoresizingMaskIntoConstraints="NO" id="wzy-Ff-VWR">
+                        <rect key="frame" x="40" y="25" width="230" height="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ptv-7k-nTC">
+                        <rect key="frame" x="55" y="40" width="195" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zhH-LS-qDK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="BCp-1i-0Yt"/>
+                    <constraint firstAttribute="trailing" secondItem="lIK-mG-pgW" secondAttribute="trailing" constant="15" id="IDN-7U-eCB"/>
+                    <constraint firstItem="lIK-mG-pgW" firstAttribute="leading" secondItem="zhH-LS-qDK" secondAttribute="trailing" constant="10" id="kZB-lR-ny8"/>
+                    <constraint firstItem="lIK-mG-pgW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zTs-mj-LuC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentImgView" destination="wzy-Ff-VWR" id="y7D-yT-k6l"/>
+                <outlet property="contentLabel" destination="Ptv-7k-nTC" id="3HT-lz-gI7"/>
+                <outlet property="nameLabel" destination="zhH-LS-qDK" id="LZO-dq-O25"/>
+                <outlet property="portraitImgView" destination="lIK-mG-pgW" id="7Vn-gh-z9H"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="duihuakuang1" width="207" height="100"/>
+    </resources>
+</document>

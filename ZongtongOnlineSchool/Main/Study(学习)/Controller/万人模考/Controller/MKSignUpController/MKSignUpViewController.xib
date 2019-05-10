@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MKSignUpViewController">
+            <connections>
+                <outlet property="MKPlanBtnSpace" destination="ihI-Ic-doW" id="1rY-HO-rtO"/>
+                <outlet property="imgViewTopSpace" destination="0Fv-OR-6ay" id="7mb-de-2Sj"/>
+                <outlet property="mkPlanBtn" destination="JXI-93-43q" id="jO0-ma-S2X"/>
+                <outlet property="signUpBtn" destination="Nn8-5x-Wez" id="tI4-En-qF4"/>
+                <outlet property="textView" destination="fTe-oA-NWa" id="Lhn-lG-YJ1"/>
+                <outlet property="timeLabel" destination="9R5-ZB-tls" id="OLp-bY-uD5"/>
+                <outlet property="titleLabel" destination="f78-9g-ahS" id="7gv-Gp-0JP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mkbanner" translatesAutoresizingMaskIntoConstraints="NO" id="MSo-t8-WfC">
+                    <rect key="frame" x="0.0" y="64" width="320" height="234"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="MSo-t8-WfC" secondAttribute="height" multiplier="160:117" id="X23-nr-NEb"/>
+                    </constraints>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="万人模考" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f78-9g-ahS">
+                    <rect key="frame" x="0.0" y="298" width="220" height="25"/>
+                    <color key="backgroundColor" red="0.23529411759999999" green="0.56862745100000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="G8j-lP-KCy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="考试时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9R5-ZB-tls">
+                    <rect key="frame" x="0.0" y="323" width="220" height="25"/>
+                    <color key="backgroundColor" red="0.23529411759999999" green="0.56862745100000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="ZbI-v3-0yD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nn8-5x-Wez">
+                    <rect key="frame" x="220" y="298" width="100" height="50"/>
+                    <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="lkw-eF-VBl"/>
+                        <constraint firstAttribute="width" constant="100" id="yo3-IF-QkQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="立即报名">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="signUpBtnClicked:" destination="-1" eventType="touchUpInside" id="0Kj-CE-rt9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXI-93-43q">
+                    <rect key="frame" x="0.0" y="298" width="320" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="TRE-8i-dgI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="模考安排">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="mkPlanBtnClicked:" destination="-1" eventType="touchUpInside" id="GdR-bO-6p9"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部 ＞" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpG-KX-FIt">
+                    <rect key="frame" x="250" y="312" width="50" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Ema-Bs-c5S"/>
+                        <constraint firstAttribute="height" constant="20" id="Ndh-9L-Jst"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9se-0n-5km">
+                    <rect key="frame" x="0.0" y="346" width="320" height="2"/>
+                    <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="IHz-R5-Xwo"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="&quot;万人模考&quot;是总统网校组织的面向所有学员的大型摸底考试，总共进行6轮万人模考。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fTe-oA-NWa">
+                    <rect key="frame" x="10" y="348" width="300" height="220"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MSo-t8-WfC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="0Fv-OR-6ay"/>
+                <constraint firstAttribute="trailing" secondItem="fTe-oA-NWa" secondAttribute="trailing" constant="10" id="0dO-1s-62O"/>
+                <constraint firstItem="f78-9g-ahS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9so-7S-kJt"/>
+                <constraint firstItem="Nn8-5x-Wez" firstAttribute="leading" secondItem="9R5-ZB-tls" secondAttribute="trailing" id="AHh-78-dG9"/>
+                <constraint firstAttribute="trailing" secondItem="Nn8-5x-Wez" secondAttribute="trailing" id="CHC-D7-EIf"/>
+                <constraint firstItem="Nn8-5x-Wez" firstAttribute="leading" secondItem="f78-9g-ahS" secondAttribute="trailing" id="CiG-58-o24"/>
+                <constraint firstItem="9R5-ZB-tls" firstAttribute="top" secondItem="f78-9g-ahS" secondAttribute="bottom" id="F6w-n0-uMv"/>
+                <constraint firstAttribute="trailing" secondItem="JXI-93-43q" secondAttribute="trailing" id="Hrm-ql-Jy0"/>
+                <constraint firstItem="JXI-93-43q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JES-cn-0vH"/>
+                <constraint firstItem="f78-9g-ahS" firstAttribute="top" secondItem="MSo-t8-WfC" secondAttribute="bottom" id="L2s-g5-zmn"/>
+                <constraint firstItem="GpG-KX-FIt" firstAttribute="centerY" secondItem="JXI-93-43q" secondAttribute="centerY" id="O4W-aZ-gsv"/>
+                <constraint firstItem="MSo-t8-WfC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Tg9-Fw-MZF"/>
+                <constraint firstAttribute="trailing" secondItem="GpG-KX-FIt" secondAttribute="trailing" constant="20" id="VPw-8Y-8Rn"/>
+                <constraint firstItem="fTe-oA-NWa" firstAttribute="top" secondItem="9se-0n-5km" secondAttribute="bottom" id="Zld-nj-u07"/>
+                <constraint firstAttribute="bottom" secondItem="fTe-oA-NWa" secondAttribute="bottom" id="bdK-Mf-Q4S"/>
+                <constraint firstAttribute="trailing" secondItem="9se-0n-5km" secondAttribute="trailing" id="bs7-J0-GK7"/>
+                <constraint firstItem="9R5-ZB-tls" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ddq-r4-H3h"/>
+                <constraint firstItem="JXI-93-43q" firstAttribute="top" secondItem="MSo-t8-WfC" secondAttribute="bottom" id="ihI-Ic-doW"/>
+                <constraint firstItem="fTe-oA-NWa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="js7-uv-Cdl"/>
+                <constraint firstItem="9se-0n-5km" firstAttribute="top" secondItem="JXI-93-43q" secondAttribute="bottom" id="lgQ-bV-8oq"/>
+                <constraint firstItem="Nn8-5x-Wez" firstAttribute="top" secondItem="MSo-t8-WfC" secondAttribute="bottom" id="mag-Hu-d2E"/>
+                <constraint firstItem="9se-0n-5km" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qKP-ef-Ihf"/>
+                <constraint firstAttribute="trailing" secondItem="MSo-t8-WfC" secondAttribute="trailing" id="xd9-8P-zfo"/>
+            </constraints>
+            <point key="canvasLocation" x="63.75" y="55.985915492957744"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mkbanner" width="750" height="612"/>
+    </resources>
+</document>

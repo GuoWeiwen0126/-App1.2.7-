@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="VideoDownloadingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipg-1S-o0b">
+                        <rect key="frame" x="20" y="10" width="235" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVh-xg-Buh">
+                        <rect key="frame" x="20" y="40" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="QHe-Sf-mZn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyJ-He-l9N">
+                        <rect key="frame" x="275" y="20" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="94N-aw-Ceo"/>
+                            <constraint firstAttribute="width" constant="30" id="S8c-4M-vX6"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="videodownloadxiazai"/>
+                        <connections>
+                            <action selector="downloadBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZZr-ci-ggl"/>
+                        </connections>
+                    </button>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cC9-IM-Evm">
+                        <rect key="frame" x="20" y="34" width="235" height="2"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySp-Ze-3xz">
+                        <rect key="frame" x="100" y="40" width="155" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ipg-1S-o0b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="3EH-cL-fWI"/>
+                    <constraint firstItem="nyJ-He-l9N" firstAttribute="leading" secondItem="ipg-1S-o0b" secondAttribute="trailing" constant="20" id="5Td-V7-xM0"/>
+                    <constraint firstItem="ySp-Ze-3xz" firstAttribute="top" secondItem="cC9-IM-Evm" secondAttribute="bottom" constant="4" id="92v-n8-YoI"/>
+                    <constraint firstItem="cC9-IM-Evm" firstAttribute="top" secondItem="ipg-1S-o0b" secondAttribute="bottom" constant="4" id="CO4-us-DKN"/>
+                    <constraint firstItem="nyJ-He-l9N" firstAttribute="leading" secondItem="ySp-Ze-3xz" secondAttribute="trailing" constant="20" id="MmD-NB-7b8"/>
+                    <constraint firstItem="cC9-IM-Evm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NBL-fp-bmB"/>
+                    <constraint firstItem="cC9-IM-Evm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="NXS-KK-4BW"/>
+                    <constraint firstItem="ipg-1S-o0b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="XRp-hV-wqU"/>
+                    <constraint firstAttribute="bottom" secondItem="KVh-xg-Buh" secondAttribute="bottom" constant="9.5" id="Ycp-29-FWc"/>
+                    <constraint firstItem="KVh-xg-Buh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="cnH-Ig-fTp"/>
+                    <constraint firstAttribute="trailing" secondItem="nyJ-He-l9N" secondAttribute="trailing" constant="15" id="iuB-ZQ-j2G"/>
+                    <constraint firstAttribute="bottom" secondItem="ySp-Ze-3xz" secondAttribute="bottom" constant="9.5" id="ixd-MW-TZQ"/>
+                    <constraint firstItem="nyJ-He-l9N" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="juz-Mj-IqT"/>
+                    <constraint firstItem="KVh-xg-Buh" firstAttribute="top" secondItem="cC9-IM-Evm" secondAttribute="bottom" constant="4" id="sh9-Im-fV8"/>
+                    <constraint firstItem="nyJ-He-l9N" firstAttribute="leading" secondItem="cC9-IM-Evm" secondAttribute="trailing" constant="20" id="x3J-jo-Vxr"/>
+                    <constraint firstItem="ySp-Ze-3xz" firstAttribute="leading" secondItem="KVh-xg-Buh" secondAttribute="trailing" id="ylo-2J-xfO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="downloadBtn" destination="nyJ-He-l9N" id="3Lg-wF-bzd"/>
+                <outlet property="progressLabel" destination="ySp-Ze-3xz" id="erZ-WB-Ns4"/>
+                <outlet property="progressView" destination="cC9-IM-Evm" id="AKN-y5-IP8"/>
+                <outlet property="speedLabel" destination="KVh-xg-Buh" id="HXH-Xt-wMd"/>
+                <outlet property="videoNameLabel" destination="ipg-1S-o0b" id="RYA-TZ-HsR"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="videodownloadxiazai" width="74" height="74"/>
+    </resources>
+</document>

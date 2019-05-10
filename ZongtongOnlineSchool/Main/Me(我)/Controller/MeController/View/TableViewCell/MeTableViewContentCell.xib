@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MeTableViewContentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b3g-Vs-4uX">
+                        <rect key="frame" x="25" y="17" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="O6e-LK-2JS"/>
+                            <constraint firstAttribute="width" constant="25" id="lQS-Lz-p6K"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xiayibu" translatesAutoresizingMaskIntoConstraints="NO" id="kIA-uo-6av">
+                        <rect key="frame" x="292" y="23" width="7" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="7" id="6Bj-ZX-kzY"/>
+                            <constraint firstAttribute="height" constant="14" id="dp5-fT-qec"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="能力评估报告" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6k-Oe-KL7">
+                        <rect key="frame" x="60" y="17" width="184" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="zhU-nZ-SoC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cw2-LQ-DDO">
+                        <rect key="frame" x="60" y="59" width="260" height="1"/>
+                        <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Ue7-lp-DbI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cw2-LQ-DDO" secondAttribute="trailing" id="AJp-f8-w4g"/>
+                    <constraint firstItem="b3g-Vs-4uX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CQN-tk-trv"/>
+                    <constraint firstItem="x6k-Oe-KL7" firstAttribute="centerY" secondItem="b3g-Vs-4uX" secondAttribute="centerY" id="aNq-u3-bjq"/>
+                    <constraint firstItem="x6k-Oe-KL7" firstAttribute="leading" secondItem="b3g-Vs-4uX" secondAttribute="trailing" constant="10" id="dhX-jE-bC7"/>
+                    <constraint firstItem="kIA-uo-6av" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lDq-cA-HHC"/>
+                    <constraint firstAttribute="bottom" secondItem="cw2-LQ-DDO" secondAttribute="bottom" constant="-0.5" id="oxs-lq-aWd"/>
+                    <constraint firstItem="cw2-LQ-DDO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="qJH-NJ-PvE"/>
+                    <constraint firstItem="b3g-Vs-4uX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="sfp-9D-Mhy"/>
+                    <constraint firstAttribute="trailing" secondItem="kIA-uo-6av" secondAttribute="trailing" constant="21" id="vvg-hu-LAv"/>
+                    <constraint firstItem="kIA-uo-6av" firstAttribute="leading" secondItem="x6k-Oe-KL7" secondAttribute="trailing" constant="48" id="w5d-6o-x9n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="b3g-Vs-4uX" id="oWF-6S-gGM"/>
+                <outlet property="titleLabel" destination="x6k-Oe-KL7" id="kkg-qw-VGv"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="xiayibu" width="14" height="24"/>
+    </resources>
+</document>

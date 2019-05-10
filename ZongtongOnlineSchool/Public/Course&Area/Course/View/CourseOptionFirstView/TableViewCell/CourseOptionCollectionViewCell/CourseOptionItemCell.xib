@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CourseOptionItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F1D-wa-AFM">
+                        <rect key="frame" x="30" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="F1D-wa-AFM" secondAttribute="height" multiplier="1:1" id="Chr-gP-zRL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="初级会计职称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0W-Ox-lMP">
+                        <rect key="frame" x="0.0" y="50" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="tga-IL-Vuu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="F1D-wa-AFM" secondAttribute="trailing" constant="30" id="7jo-yM-08r"/>
+                <constraint firstItem="a0W-Ox-lMP" firstAttribute="top" secondItem="F1D-wa-AFM" secondAttribute="bottom" id="MAK-fu-142"/>
+                <constraint firstAttribute="trailing" secondItem="a0W-Ox-lMP" secondAttribute="trailing" id="Nk9-0i-K6J"/>
+                <constraint firstItem="F1D-wa-AFM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="qjC-YU-sdr"/>
+                <constraint firstItem="F1D-wa-AFM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="ugd-36-tCx"/>
+                <constraint firstItem="a0W-Ox-lMP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wfa-90-GEZ"/>
+            </constraints>
+            <connections>
+                <outlet property="courseTitleLabel" destination="a0W-Ox-lMP" id="ph7-5j-c7T"/>
+                <outlet property="imgView" destination="F1D-wa-AFM" id="qeW-Ta-64v"/>
+                <outlet property="leadingSpace" destination="ugd-36-tCx" id="x0W-zh-1MP"/>
+                <outlet property="trailingSpace" destination="7jo-yM-08r" id="zWH-SG-QUr"/>
+            </connections>
+            <point key="canvasLocation" x="-76" y="42"/>
+        </collectionViewCell>
+    </objects>
+</document>

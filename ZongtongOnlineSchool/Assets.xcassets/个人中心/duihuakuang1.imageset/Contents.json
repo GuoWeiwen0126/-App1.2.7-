@@ -1,0 +1,35 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "stretch",
+          "width" : 380,
+          "height" : 170
+        },
+        "cap-insets" : {
+          "bottom" : 15,
+          "top" : 15,
+          "right" : 20,
+          "left" : 15
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "duihuakuang1@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

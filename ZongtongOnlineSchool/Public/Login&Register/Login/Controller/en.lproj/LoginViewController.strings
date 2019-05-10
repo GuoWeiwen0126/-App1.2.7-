@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "点击试用"; ObjectID = "K9U-P9-XVQ"; */
+"K9U-P9-XVQ.normalTitle" = "Try out";
+
+/* Class = "UIButton"; normalTitle = "记住密码"; ObjectID = "Qc3-oO-qOo"; */
+"Qc3-oO-qOo.normalTitle" = "Save";
+
+/* Class = "UITextField"; placeholder = "请输入您的手机号"; ObjectID = "WDz-h2-BQi"; */
+"WDz-h2-BQi.placeholder" = "Enter your phone number";
+
+/* Class = "UIButton"; normalTitle = "注册"; ObjectID = "eqs-8h-Pye"; */
+"eqs-8h-Pye.normalTitle" = "Register";
+
+/* Class = "UITextField"; placeholder = "请输入您的密码"; ObjectID = "j9F-KV-ZLu"; */
+"j9F-KV-ZLu.placeholder" = "Enter your password";
+
+/* Class = "UIButton"; normalTitle = "忘记密码"; ObjectID = "wwi-Kd-hU0"; */
+"wwi-Kd-hU0.normalTitle" = "Forget";
+
+/* Class = "UIButton"; normalTitle = "登录"; ObjectID = "z3C-Pp-Wto"; */
+"z3C-Pp-Wto.normalTitle" = "Login";
