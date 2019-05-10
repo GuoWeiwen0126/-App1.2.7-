@@ -116,7 +116,7 @@
     [self configXGPushWithOptions:launchOptions];
     
     //腾讯移动统计
-#warning 提交审核
+    
     [MTA startWithAppkey:@"IUB81IU55EMA"];
     
     return YES;
